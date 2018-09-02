@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-15 11:33:35 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.jdcy.model.entity.persist.Accounts" table="accounts" catalog="jdcy" optimistic-lock="version">
+        <id name="aid" type="java.lang.Integer">
+            <column name="aid" />
+            <generator class="identity" />
+        </id>
+        <property name="aname" type="string">
+            <column name="aname" />
+        </property>
+        <property name="apwd" type="string">
+            <column name="apwd" />
+        </property>
+    </class>
+</hibernate-mapping>
